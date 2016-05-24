@@ -1,0 +1,24 @@
+Package: coxphMIC
+Type: Package
+Title: Sparse Estimation of Cox Proportional Hazards Models via Approximated
+    Inforamtion Criterion
+Version: 0.1.0
+Author: Xiaogang Su and Razieh Nabi Abdolyousefi
+Maintainer: Xiaogang Su <xiaogangsu@gmail.com> and Razieh Nabi Abdolyousefi
+    <rnabiabdolyousefi@miners.utep.edu>
+Description: This packages computes sparse estimates for Cox PH models via
+    MIC, a short name for "Minimizing approxiamted Inforatmion Criterion". MIC
+    mimics the best subset selection using a penalized likelihood approach yet
+    with no need of a tuning parameter. The problem is further reformulated with
+    a reparameterization step so that it reduces to one unconstrained nonconvex
+    yet smooth programming problem, which can be solved efficiently. Furthermore,
+    the reparameterization tactic yields an additional advantage in terms of
+    circumventing postselection inference.
+License: GPL-2
+Depends:
+    R (>= 3.1.0)
+Imports:
+    survival (>= 2.38),
+    numDeriv (>= 2014.2-1)
+LazyData: TRUE
+RoxygenNote: 5.0.1
